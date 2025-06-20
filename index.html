@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixFast - Pitch Deck</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-900">FixFast</h1>
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#vision" class="text-stone-600 hover:text-blue-800">Visión</a></li>
+                <li><a href="#ecosistema" class="text-stone-600 hover:text-blue-800">Ecosistema</a></li>
+                <li><a href="#arquitectura" class="text-stone-600 hover:text-blue-800">Arquitectura</a></li>
+                <li><a href="#flujos" class="text-stone-600 hover:text-blue-800">Flujos Clave</a></li>
+                <li><a href="#seguridad" class="text-stone-600 hover:text-blue-800">Seguridad</a></li>
+                <li><a href="#checklist" class="text-stone-600 hover:text-blue-800">Checklist</a></li>
+                <li><a href="#futuro" class="text-stone-600 hover:text-blue-800">Futuro</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden text-stone-600">
+                <!-- SVG Icon for menu -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#vision" class="block py-2 px-4 text-sm text-stone-600 hover:bg-stone-200">Visión</a>
+            <a href="#ecosistema" class="block py-2 px-4 text-sm text-stone-600 hover:bg-stone-200">Ecosistema</a>
+            <a href="#arquitectura" class="block py-2 px-4 text-sm text-stone-600 hover:bg-stone-200">Arquitectura</a>
+            <a href="#flujos" class="block py-2 px-4 text-sm text-stone-600 hover:bg-stone-200">Flujos Clave</a>
+            <a href="#seguridad" class="block py-2 px-4 text-sm text-stone-600 hover:bg-stone-200">Seguridad</a>
+            <a href="#checklist" class="block py-2 px-4 text-sm text-stone-600 hover:bg-stone-200">Checklist</a>
+            <a href="#futuro" class="block py-2 px-4 text-sm text-stone-600 hover:bg-stone-200">Futuro</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Vision Section -->
+        <section id="vision" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">La solución para la gestión de incidencias</h2>
+                <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                    FixFast es una plataforma web moderna diseñada para conectar de forma fluida a administradores de propiedades y particulares con especialistas de oficios cualificados. Nuestro objetivo es simplificar y agilizar la resolución de incidencias y el mantenimiento, creando un ecosistema eficiente, transparente y confiable.
+                </p>
+            </div>
+        </section>
+
+        <!-- Ecosystem Section -->
+        <section id="ecosistema" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">Nuestro Ecosistema</h2>
+                    <p class="text-md text-stone-600 max-w-2xl mx-auto">Así interactúan nuestros usuarios clave a través de la plataforma para resolver incidencias de manera eficiente.</p>
+                </div>
+                <div class="flex ecosystem-flow justify-center items-center text-center">
+                    <div class="w-full md:w-1/4 p-4"><div class="bg-white p-6 rounded-xl shadow-lg h-full"><div class="text-4xl mb-3">👤</div><h3 class="font-bold text-xl mb-2">Adm. de Propiedad</h3><p class="text-sm text-stone-500">Crea solicitudes de servicio detalladas y adjunta evidencia visual del problema.</p></div></div>
+                    <div class="flow-arrow"></div>
+                    <div class="w-full md:w-1/3 p-4"><div class="bg-blue-800 text-white p-6 rounded-xl shadow-lg h-full"><div class="text-4xl mb-3">⚡</div><h3 class="font-bold text-xl mb-2">Plataforma FixFast</h3><p class="text-sm text-blue-200">Clasifica, notifica y gestiona el ciclo de vida de la solicitud en tiempo real, conectando la necesidad con la solución.</p></div></div>
+                    <div class="flow-arrow"></div>
+                    <div class="w-full md:w-1/4 p-4"><div class="bg-white p-6 rounded-xl shadow-lg h-full"><div class="text-4xl mb-3">🛠️</div><h3 class="font-bold text-xl mb-2">Especialista</h3><p class="text-sm text-stone-500">Recibe notificaciones de trabajos relevantes, acepta y actualiza el estado hasta su finalización.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="arquitectura" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">Arquitectura Tecnológica Robusta y Escalable</h2>
+                    <p class="text-md text-stone-600 max-w-2xl mx-auto">Utilizamos una pila tecnológica moderna para garantizar una experiencia de usuario rápida, segura y en tiempo real.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div class="bg-stone-100 p-8 rounded-xl"><h3 class="text-2xl font-semibold mb-4 text-blue-900">Frontend Dinámico</h3><div class="flex items-center mb-4"><span class="text-3xl mr-4">⚛️</span><div><h4 class="font-bold">React</h4><p class="text-stone-600">Construimos una interfaz de usuario interactiva y reutilizable, ofreciendo una experiencia de aplicación de una sola página (SPA) sin interrupciones.</p></div></div></div>
+                    <div class="bg-stone-100 p-8 rounded-xl"><h3 class="text-2xl font-semibold mb-4 text-blue-900">Backend Serverless con Firebase</h3><div class="space-y-4"><div class="flex items-start"><span class="text-2xl mr-4 mt-1">🔑</span><div><h4 class="font-bold">Authentication</h4><p class="text-stone-600 text-sm">Gestión de usuarios segura con inicio de sesión por email/contraseña y proveedores sociales como Google.</p></div></div><div class="flex items-start"><span class="text-2xl mr-4 mt-1">💾</span><div><h4 class="font-bold">Cloud Firestore</h4><p class="text-stone-600 text-sm">Base de datos NoSQL en tiempo real para sincronizar datos instantáneamente entre todos los usuarios.</p></div></div><div class="flex items-start"><span class="text-2xl mr-4 mt-1">📦</span><div><h4 class="font-bold">Cloud Storage</h4><p class="text-stone-600 text-sm">Almacenamiento de archivos escalable para imágenes y videos de las incidencias.</p></div></div><div class="flex items-start"><span class="text-2xl mr-4 mt-1">☁️</span><div><h4 class="font-bold">Cloud Functions</h4><p class="text-stone-600 text-sm">Lógica de backend automatizada que se ejecuta en respuesta a eventos, como enviar notificaciones o calcular ratings.</p></div></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflows Section -->
+        <section id="flujos" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12"><h2 class="text-3xl font-bold mb-2">Flujos de Trabajo Clave</h2><p class="text-md text-stone-600 max-w-2xl mx-auto">Explora de forma interactiva los procesos y la estructura de datos que hacen funcionar a FixFast.</p></div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-4 border-b border-stone-200"><nav class="flex -mb-px" id="tabs-container"><button data-tab="lifecycle" class="tab-button active text-sm md:text-base font-medium text-center text-stone-500 hover:text-blue-700 border-b-2 border-transparent py-4 px-2 md:px-4">Ciclo de Vida de Solicitud</button><button data-tab="data-model" class="tab-button text-sm md:text-base font-medium text-center text-stone-500 hover:text-blue-700 border-b-2 border-transparent py-4 px-2 md:px-4">Modelo de Datos</button><button data-tab="logic" class="tab-button text-sm md:text-base font-medium text-center text-stone-500 hover:text-blue-700 border-b-2 border-transparent py-4 px-2 md:px-4">Lógica Automatizada</button></nav></div>
+                    <div id="tab-content-container">
+                        <div id="lifecycle" class="tab-content active p-4 bg-white rounded-lg shadow"><h3 class="font-bold text-lg mb-4">De la creación al cierre</h3><div class="flex justify-between items-center text-center text-xs sm:text-sm p-4 bg-stone-50 rounded-lg"><div><span class="bg-blue-100 text-blue-800 p-2 rounded-full">Abierta</span></div><div class="text-stone-300 font-sans mx-1 sm:mx-2">&gt;</div><div><span class="bg-yellow-100 text-yellow-800 p-2 rounded-full">Asignada</span></div><div class="text-stone-300 font-sans mx-1 sm:mx-2">&gt;</div><div><span class="bg-orange-100 text-orange-800 p-2 rounded-full">En Progreso</span></div><div class="text-stone-300 font-sans mx-1 sm:mx-2">&gt;</div><div><span class="bg-green-100 text-green-800 p-2 rounded-full">Completada</span></div><div class="text-stone-300 font-sans mx-1 sm:mx-2">&gt;</div><div><span class="bg-stone-200 text-stone-800 p-2 rounded-full">Cerrada</span></div></div><p class="text-sm text-stone-600 mt-4">Cada solicitud de servicio avanza a través de estados claros y definidos. Las actualizaciones de estado se reflejan en tiempo real para todos los involucrados, garantizando una comunicación y seguimiento transparentes desde el momento en que se informa un problema hasta que se resuelve y se archiva.</p></div>
+                        <div id="data-model" class="tab-content p-4 bg-white rounded-lg shadow"><h3 class="font-bold text-lg mb-4">Estructura de Datos en Firestore</h3><p class="text-sm text-stone-600 mb-4">Nuestro esquema NoSQL está diseñado para la eficiencia y la escalabilidad, organizando los datos en colecciones lógicas. Haz clic en una colección para ver la estructura de su documento.</p><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"><div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">users</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"uid":"string","email":"string","role":"string","trade":"string","avgRating":"number"}</code></pre></div></div><div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">properties</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"propertyManagerId":"string","name":"string","address":"string","location":"geopoint"}</code></pre></div></div><div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">service_requests</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"propertyId":"string","specialistId":"string","description":"string","status":"string"}</code></pre></div></div><div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">reviews</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"specialistId":"string","rating":"number","comment":"string"}</code></pre></div></div></div></div>
+                        <div id="logic" class="tab-content p-4 bg-white rounded-lg shadow"><h3 class="font-bold text-lg mb-4">Automatización con Cloud Functions</h3><div class="grid md:grid-cols-2 gap-8 items-center"><div><p class="text-sm text-stone-600 mb-4">Las Cloud Functions son el cerebro de nuestro backend. Actúan como trabajadores automáticos que responden a eventos específicos en la aplicación para realizar tareas críticas sin intervención manual, garantizando la integridad y eficiencia de los datos.</p><div class="space-y-3 text-sm"><div class="bg-stone-50 p-3 rounded-lg"><strong class="text-green-700">ON CREATE(user):</strong> Inicializa el perfil del especialista (rating, verificación).</div><div class="bg-stone-50 p-3 rounded-lg"><strong class="text-yellow-700">ON UPDATE(request):</strong> Envía notificaciones cuando el estado de una solicitud cambia.</div><div class="bg-stone-50 p-3 rounded-lg"><strong class="text-blue-700">ON WRITE(review):</strong> Recalcula y actualiza la calificación promedio de un especialista.</div></div></div><div><div class="chart-container"><canvas id="functionsChart"></canvas></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section id="seguridad" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12"><h2 class="text-3xl font-bold mb-2">Seguridad por Diseño</h2><p class="text-md text-stone-600 max-w-2xl mx-auto">La protección de los datos de nuestros usuarios es primordial. Implementamos una estrategia de seguridad de múltiples capas.</p></div>
+                <div class="grid md:grid-cols-2 gap-8"><div class="bg-stone-100 p-6 rounded-xl"><h3 class="font-bold text-xl mb-3 text-blue-900">Reglas de Acceso a Datos (Firestore)</h3><p class="text-sm text-stone-600 mb-4">Las reglas de Firestore actúan como un guardián a nivel de base de datos. Cada solicitud de lectura o escritura es validada para asegurar que los usuarios solo accedan a la información que les corresponde.</p><div class="bg-black text-white p-4 rounded-md font-mono text-xs"><span class="text-pink-400">match</span> /properties/{propertyId} {<br>&nbsp;&nbsp;<span class="text-cyan-400">allow</span> read: <span class="text-yellow-400">if</span> request.auth != <span class="text-purple-400">null</span>;<br>&nbsp;&nbsp;<span class="text-cyan-400">allow</span> write: <span class="text-yellow-400">if</span> request.auth.uid == resource.data.propertyManagerId;<br>}</div></div><div class="bg-stone-100 p-6 rounded-xl"><h3 class="font-bold text-xl mb-3 text-blue-900">Reglas de Acceso a Archivos (Storage)</h3><p class="text-sm text-stone-600 mb-4">Las reglas de Storage protegen los archivos subidos. Validamos no solo quién puede subir o ver un archivo, sino también su tamaño y tipo, previniendo abusos.</p><div class="bg-black text-white p-4 rounded-md font-mono text-xs"><span class="text-pink-400">match</span> /requests/{reqId}/{fileName} {<br>&nbsp;&nbsp;<span class="text-cyan-400">allow</span> write: <span class="text-yellow-400">if</span> request.auth.uid == <span class="text-green-400">getRoleOwner(reqId)</span> &&<br>&nbsp;&nbsp;&nbsp;&nbsp;request.resource.size &lt; 5 * 1024 * 1024;<br>}</div></div></div>
+            </div>
+        </section>
+
+        <!-- Checklist Section -->
+        <section id="checklist" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12"><h2 class="text-3xl font-bold mb-2">Checklist de Desarrollo y Entregables</h2><p class="text-md text-stone-600 max-w-2xl mx-auto">Sigue el progreso del desarrollo a través de hitos clave, cada uno con un entregable tangible y una puntuación para medir el avance.</p></div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-8"><div class="flex justify-between mb-1"><span class="text-base font-medium text-blue-700">Progreso Total</span><span class="text-sm font-medium text-blue-700" id="progress-percentage">0%</span></div><div class="w-full bg-stone-200 rounded-full h-4"><div id="progress-bar" class="bg-blue-600 h-4 rounded-full progress-bar-fill" style="width: 0%"></div></div></div>
+                    <div id="accordion-container" class="space-y-2">
+                        <!-- Phase 1 -->
+                        <div class="border border-stone-200 rounded-lg bg-white"><button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold text-stone-800 hover:bg-stone-50"><span>Fase 1: Configuración Inicial (15 Pts)</span><span>+</span></button><div class="accordion-content"><ul class="p-4 pt-0 space-y-3"><li class="checklist-item" data-points="5"><input type="checkbox" class="mr-2 rounded"> <label>Setup de Firebase: Proyecto creado y servicios habilitados. <strong class="text-blue-800 text-xs">[Entregable: Objeto `firebaseConfig`]</strong></label></li><li class="checklist-item" data-points="5"><input type="checkbox" class="mr-2 rounded"> <label>Entorno React: Proyecto Vite funcional con dependencias. <strong class="text-blue-800 text-xs">[Entregable: App corriendo en localhost]</strong></label></li><li class="checklist-item" data-points="5"><input type="checkbox" class="mr-2 rounded"> <label>Rutas Básicas: `react-router-dom` configurado. <strong class="text-blue-800 text-xs">[Entregable: Rutas funcionales para Login, Register, Dashboards]</strong></label></li></ul></div></div>
+                        <!-- Phase 2 -->
+                        <div class="border border-stone-200 rounded-lg bg-white"><button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold text-stone-800 hover:bg-stone-50"><span>Fase 2: Autenticación y Roles (20 Pts)</span><span>+</span></button><div class="accordion-content"><ul class="p-4 pt-0 space-y-3"><li class="checklist-item" data-points="7"><input type="checkbox" class="mr-2 rounded"> <label>Registro de Usuarios: Componente con lógica para Email y Google. <strong class="text-blue-800 text-xs">[Entregable: Componente de Registro y perfil en Firestore]</strong></label></li><li class="checklist-item" data-points="6"><input type="checkbox" class="mr-2 rounded"> <label>Login y Logout: Componente y gestión de estado con `onAuthStateChanged`. <strong class="text-blue-800 text-xs">[Entregable: Flujo completo de sesión]</strong></label></li><li class="checklist-item" data-points="7"><input type="checkbox" class="mr-2 rounded"> <label>Manejo de Roles: Rutas protegidas y UI condicional. <strong class="text-blue-800 text-xs">[Entregable: Componente `ProtectedRoute`]</strong></label></li></ul></div></div>
+                        <!-- Phase 3 to 7 -->
+                        <div class="border border-stone-200 rounded-lg bg-white"><button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold text-stone-800 hover:bg-stone-50"><span>Fase 3: Gestión de Datos con Firestore (20 Pts)</span><span>+</span></button><div class="accordion-content"><ul class="p-4 pt-0 space-y-3"><li class="checklist-item" data-points="5"><input type="checkbox" class="mr-2 rounded"> <label>Modelo de Datos: Colecciones y estructuras definidas. <strong class="text-blue-800 text-xs">[Entregable: Diagrama de datos o documento de esquema]</strong></label></li><li class="checklist-item" data-points="7"><input type="checkbox" class="mr-2 rounded"> <label>CRUD de Propiedades: Componentes para gestionar propiedades. <strong class="text-blue-800 text-xs">[Entregable: UI funcional para propiedades]</strong></label></li><li class="checklist-item" data-points="8"><input type="checkbox" class="mr-2 rounded"> <label>CRUD de Solicitudes de Servicio: Flujo completo de gestión. <strong class="text-blue-800 text-xs">[Entregable: UI para crear, ver y actualizar solicitudes]</strong></label></li></ul></div></div>
+                        <div class="border border-stone-200 rounded-lg bg-white"><button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold text-stone-800 hover:bg-stone-50"><span>Fase 4: Almacenamiento de Archivos (10 Pts)</span><span>+</span></button><div class="accordion-content"><ul class="p-4 pt-0 space-y-3"><li class="checklist-item" data-points="5"><input type="checkbox" class="mr-2 rounded"> <label>Subida de Imágenes/Videos: Componente para seleccionar y subir archivos. <strong class="text-blue-800 text-xs">[Entregable: Componente de carga funcional]</strong></label></li><li class="checklist-item" data-points="5"><input type="checkbox" class="mr-2 rounded"> <label>Vinculación a Firestore: URL guardada en la solicitud de servicio. <strong class="text-blue-800 text-xs">[Entregable: URL visible en los detalles de la solicitud]</strong></label></li></ul></div></div>
+                        <div class="border border-stone-200 rounded-lg bg-white"><button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold text-stone-800 hover:bg-stone-50"><span>Fase 5: Lógica de Backend (Cloud Functions) (15 Pts)</span><span>+</span></button><div class="accordion-content"><ul class="p-4 pt-0 space-y-3"><li class="checklist-item" data-points="3"><input type="checkbox" class="mr-2 rounded"> <label>Configuración de Functions: Proyecto de TypeScript inicializado. <strong class="text-blue-800 text-xs">[Entregable: Carpeta `functions` en el repositorio]</strong></label></li><li class="checklist-item" data-points="8"><input type="checkbox" class="mr-2 rounded"> <label>Disparadores de Firestore: Funciones de `onCreate`, `onUpdate`, `onWrite`. <strong class="text-blue-800 text-xs">[Entregable: Funciones desplegadas y operativas]</strong></label></li><li class="checklist-item" data-points="4"><input type="checkbox" class="mr-2 rounded"> <label>Función HTTP: Endpoint de admin para verificar especialistas. <strong class="text-blue-800 text-xs">[Entregable: Función HTTP desplegada y funcional]</strong></label></li></ul></div></div>
+                        <div class="border border-stone-200 rounded-lg bg-white"><button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold text-stone-800 hover:bg-stone-50"><span>Fase 6: Reglas de Seguridad (15 Pts)</span><span>+</span></button><div class="accordion-content"><ul class="p-4 pt-0 space-y-3"><li class="checklist-item" data-points="8"><input type="checkbox" class="mr-2 rounded"> <label>Reglas de Firestore: Acceso granular por rol y propiedad. <strong class="text-blue-800 text-xs">[Entregable: Archivo `firestore.rules` completo]</strong></label></li><li class="checklist-item" data-points="7"><input type="checkbox" class="mr-2 rounded"> <label>Reglas de Storage: Acceso seguro a archivos por participante. <strong class="text-blue-800 text-xs">[Entregable: Archivo `storage.rules` completo]</strong></label></li></ul></div></div>
+                        <div class="border border-stone-200 rounded-lg bg-white"><button class="accordion-header w-full flex justify-between items-center p-4 text-left font-semibold text-stone-800 hover:bg-stone-50"><span>Fase 7: Integración de IA (Conceptual) (5 Pts)</span><span>+</span></button><div class="accordion-content"><ul class="p-4 pt-0 space-y-3"><li class="checklist-item" data-points="5"><input type="checkbox" class="mr-2 rounded"> <label>Análisis de Incidencias: Estructura de Cloud Function para llamar a Gemini. <strong class="text-blue-800 text-xs">[Entregable: Código conceptual de la función en el repositorio]</strong></label></li></ul></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section id="futuro" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12"><h2 class="text-3xl font-bold mb-2">Innovación y Hoja de Ruta Futura</h2><p class="text-md text-stone-600 max-w-2xl mx-auto">Hemos construido una base sólida, pero esto es solo el comienzo. FixFast está diseñado para evolucionar.</p></div>
+                <div class="grid md:grid-cols-2 gap-8 mb-12"><div class="bg-stone-100 p-8 rounded-xl"><h3 class="font-bold text-xl mb-3 text-blue-900">Categorización Inteligente con IA</h3><p class="text-stone-600">Planeamos integrar un modelo de IA como Gemini para analizar la descripción de las incidencias en lenguaje natural. Esto permitirá sugerir automáticamente el oficio requerido, agilizando el proceso y reduciendo errores.</p></div><div class="bg-stone-100 p-8 rounded-xl"><h3 class="font-bold text-xl mb-3 text-blue-900">Hoja de Ruta</h3><ul class="space-y-2 text-stone-600 list-inside"><li class="flex items-center"><span class="text-blue-500 mr-2">💬</span> Chat en tiempo real entre usuarios.</li><li class="flex items-center"><span class="text-green-500 mr-2">💳</span> Integración de pasarela de pagos (Stripe).</li><li class="flex items-center"><span class="text-yellow-500 mr-2">📊</span> Analíticas avanzadas de uso de la plataforma.</li><li class="flex items-center"><span class="text-red-500 mr-2">🔔</span> Notificaciones Push a dispositivos móviles.</li></ul></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-stone-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 FixFast. Una nueva era en la gestión de mantenimiento.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
