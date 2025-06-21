@@ -47,6 +47,16 @@ body {
     color: #6b7280; /* text-stone-500 */
 }
 
+/* --- INICIO DE LA CORRECCIÓN --- */
+.data-payload pre {
+    white-space: pre-wrap;   /* Permite que el texto se ajuste a la siguiente línea */
+    word-break: break-all; /* Rompe palabras largas o strings para que no se desborden */
+    font-size: 0.75rem;      /* Hacemos la fuente un poco más pequeña */
+    text-align: left;        /* Aseguramos la alineación a la izquierda */
+}
+/* --- FIN DE LA CORRECCIÓN --- */
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .flow-arrow::after {
