@@ -28,8 +28,7 @@ Este gráfico y tabla representan el progreso hacia la finalización del Product
 
 **Progreso Total: 0 / 100 Puntos**
 
-![Progreso del Proyecto](https://progress-bar.dev/0/?title=Avance)
-
+![Progreso del Proyecto](https://progress-bar.jod.dev/progress/0?title=Avance)
 
 | Fase                               | Hitos Clave                       | Puntuación | Estado |
 | :--------------------------------- | :-------------------------------- | :--------: | :----: |
