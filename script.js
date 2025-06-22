@@ -91,6 +91,36 @@ document.addEventListener('DOMContentLoaded', function() {
         const progressBar = document.getElementById('progress-bar');
         const progressPercentage = document.getElementById('progress-percentage');
         const totalScore = 100;
+        const CHECKLIST_STORAGE_KEY = 'fixfast-checklist-state';
+
+        // --- INICIO DE LA LÓGICA DE GUARDADO ---
+        
+        // Guarda el estado actual de todos los checkboxes en localStorage
+        const saveChecklistState = () => {
+            const state = {};
+            checklistItems.forEach(item => {
+                const checkbox = item.querySelector('input[type="checkbox"]');
+                if (checkbox.id) {
+                    state[checkbox.id] = checkbox.checked;
+                }
+            });
+            localStorage.setItem(CHECKLIST_STORAGE_KEY, JSON.stringify(state));
+        };
+
+        // Carga el estado de los checkboxes desde localStorage
+        const loadChecklistState = () => {
+            const savedState = JSON.parse(localStorage.getItem(CHECKLIST_STORAGE_KEY));
+            if (savedState) {
+                checklistItems.forEach(item => {
+                    const checkbox = item.querySelector('input[type="checkbox"]');
+                    if (checkbox.id && savedState[checkbox.id] !== undefined) {
+                        checkbox.checked = savedState[checkbox.id];
+                    }
+                });
+            }
+        };
+        
+        // --- FIN DE LA LÓGICA DE GUARDADO ---
 
         const updateProgress = () => {
             let currentScore = 0;
@@ -110,9 +140,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         checklistItems.forEach(item => {
             const checkbox = item.querySelector('input[type="checkbox"]');
-            checkbox.addEventListener('change', updateProgress);
+            // Cuando un checkbox cambia, actualiza el progreso Y guarda el estado
+            checkbox.addEventListener('change', () => {
+                updateProgress();
+                saveChecklistState();
+            });
         });
         
-        updateProgress(); // Initial calculation on page load
+        // Al cargar la página, primero carga el estado guardado y LUEGO calcula el progreso inicial
+        loadChecklistState();
+        updateProgress();
     }
 });
