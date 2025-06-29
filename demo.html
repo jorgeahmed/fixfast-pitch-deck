@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixFast - Demo de la Aplicación</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body class="bg-stone-100">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-900">FixFast - Demo</a>
+            <a href="index.html" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition">Volver al Pitch Deck</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-900 mb-2">Demo Interactiva de la App</h2>
+            <p class="text-md text-stone-600 max-w-2xl mx-auto">Navega entre las pestañas para ver las diferentes pantallas de la aplicación.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto">
+            <div id="tabs-container"></div>
+            
+            <div id="demo-container">
+                <div class="phone-mockup">
+                    <div id="phone-screen-content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="demo.js" defer></script>
+</body>
+</html>
