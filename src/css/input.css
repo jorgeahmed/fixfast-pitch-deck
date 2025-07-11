@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados generales */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* ... (otros estilos como .flow-node, etc., se mantienen igual) ... */
+
+/* --- ESTILOS PARA TABS (GENÉRICOS Y DEMO) --- */
+.tab-button {
+    padding: 0.75rem 1rem;
+    margin: 0 0.25rem -1px 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: none;
+    color: #4b5563; /* Color de texto por defecto */
+    transition: all 0.2s ease-in-out;
+}
+.tab-button:hover {
+    background-color: #f3f4f6;
+    color: #1e3a8a;
+}
+/* CORRECCIÓN: Estilos más notorios para la pestaña activa */
+.tab-button.active {
+    background-color: white;
+    border-color: #e5e7eb #e5e7eb white;
+    color: #1d4ed8; /* Color de texto más fuerte para el activo */
+    font-weight: 700;
+}
+
+/* --- ESTILOS PARA EL SIMULADOR DE CELULAR --- */
+.phone-mockup {
+    position: relative; max-width: 420px; width: 100%; margin: 0 auto;
+    border: 14px solid #1c1917; border-radius: 2.5rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+    background-color: #0f1a24; overflow: hidden;
+}
+.phone-mockup::before {
+    content: ''; display: block; width: 160px; height: 25px;
+    background-color: #1c1917; position: absolute; top: 0px; left: 50%;
+    transform: translateX(-50%); border-radius: 0 0 1.25rem 1.25rem; z-index: 10;
+}
+/* CORRECCIÓN: Altura automática para eliminar la barra de desplazamiento interna */
+.phone-screen {
+     width: 100%;
+     height: auto; /* Ajuste para que crezca con el contenido */
+     min-height: 600px; /* Altura mínima para que no se colapse al cargar */
+     background-color: #0f1a24;
+     overflow: hidden; /* Oculta el scroll interno */
+     border-radius: 1.5rem;
+}
+
+/* --- ESTILOS PARA ACORDEÓN (CHECKLIST) --- */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content .p-4 {
+    padding-top: 0;
+}
+
+/* Estilo para el ítem de la checklist cuando está completado */
+.checklist-item-done label {
+    text-decoration: line-through;
+    color: #9ca3af; /* Tailwind gray-400 */
+}
+
+/* --- CORRECCIÓN VISUAL PARA EL ICONO DEL ACORDEÓN --- */
+.accordion-header span:last-child {
+    transition: transform 0.3s ease-out;
+}
+.accordion-header.open span:last-child {
+    transform: rotate(45deg);
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixFast - Arquitectura y Hoja de Ruta Detallada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    
+    <main class="container mx-auto p-4 md:p-8">
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-2">Arquitectura y Roadmap Técnico</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">La base tecnológica que planeamos construir para impulsar a FixFast, diseñada para ser robusta, escalable y segura.</p>
+        </header>
+
+        <div class="max-w-7xl mx-auto space-y-12">
+
+            <section id="arquitectura" class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">Arquitectura Tecnológica Robusta y Escalable</h2>
+                    <p class="text-md text-stone-600 max-w-3xl mx-auto">Nuestra elección de una arquitectura <strong>serverless</strong> con Firebase es estratégica. Nos permitirá escalar de cientos a millones de usuarios sin tener que gestionar servidores, reduciendo costos operativos y permitiendo que el sistema crezca automáticamente según la demanda.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div class="bg-stone-100 p-8 rounded-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-900">Frontend Dinámico</h3>
+                        <div class="flex items-center mb-4"><span class="text-3xl mr-4">⚛️</span><div><h4 class="font-bold">React</h4><p class="text-stone-600">Construiremos una interfaz de usuario interactiva y reutilizable, ofreciendo una experiencia de aplicación de una sola página (SPA) sin interrupciones.</p></div></div>
+                    </div>
+                    <div class="bg-stone-100 p-8 rounded-xl">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-900">Backend Serverless con Firebase</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start"><span class="text-2xl mr-4 mt-1">🔑</span><div><h4 class="font-bold">Authentication</h4><p class="text-stone-600 text-sm">Gestión de usuarios segura.</p></div></div>
+                            <div class="flex items-start"><span class="text-2xl mr-4 mt-1">💾</span><div><h4 class="font-bold">Cloud Firestore</h4><p class="text-stone-600 text-sm">Base de datos NoSQL en tiempo real.</p></div></div>
+                            <div class="flex items-start"><span class="text-2xl mr-4 mt-1">📦</span><div><h4 class="font-bold">Cloud Storage</h4><p class="text-stone-600 text-sm">Almacenamiento de archivos escalable.</p></div></div>
+                            <div class="flex items-start"><span class="text-2xl mr-4 mt-1">☁️</span><div><h4 class="font-bold">Cloud Functions</h4><p class="text-stone-600 text-sm">Lógica de backend automatizada.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="flujos" class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">Flujos de Trabajo Clave del MVP</h2>
+                    <p class="text-md text-stone-600 max-w-2xl mx-auto">Explora de forma interactiva los procesos y la estructura de datos que harán funcionar a FixFast.</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-4 border-b border-stone-200" id="tabs-container-tech">
+                        <nav class="flex -mb-px">
+                            <button data-tab="lifecycle" class="tab-button active text-sm md:text-base font-medium text-center py-4 px-4">Ciclo de Vida de Solicitud</button>
+                            <button data-tab="data-model" class="tab-button text-sm md:text-base font-medium text-center py-4 px-4">Modelo de Datos</button>
+                            <button data-tab="logic" class="tab-button text-sm md:text-base font-medium text-center py-4 px-4">Lógica Automatizada</button>
+                        </nav>
+                    </div>
+                    <div id="tab-content-container-tech">
+                        <div id="lifecycle" class="tab-content active p-4">
+                            <h3 class="font-bold text-lg mb-4">De la creación al cierre</h3>
+                            <div class="flex flex-wrap justify-between items-center text-center text-xs sm:text-sm p-4 bg-stone-50 rounded-lg">
+                                <div><span class="bg-blue-100 text-blue-800 p-2 rounded-full">Abierta</span></div><div class="text-stone-300 font-sans">&gt;</div>
+                                <div><span class="bg-yellow-100 text-yellow-800 p-2 rounded-full">Asignada</span></div><div class="text-stone-300 font-sans">&gt;</div>
+                                <div><span class="bg-orange-100 text-orange-800 p-2 rounded-full">En Progreso</span></div><div class="text-stone-300 font-sans">&gt;</div>
+                                <div><span class="bg-green-100 text-green-800 p-2 rounded-full">Completada</span></div><div class="text-stone-300 font-sans">&gt;</div>
+                                <div><span class="bg-stone-200 text-stone-800 p-2 rounded-full">Cerrada</span></div>
+                            </div>
+                            <p class="text-sm text-stone-600 mt-4">Cada solicitud avanzará a través de estados claros. Las actualizaciones se reflejarán en tiempo real para todos los involucrados, garantizando un seguimiento transparente.</p>
+                        </div>
+                        <div id="data-model" class="tab-content p-4">
+                            <h3 class="font-bold text-lg mb-4">Estructura de Datos en Firestore</h3>
+                            <p class="text-sm text-stone-600 mb-4">Nuestro esquema NoSQL será diseñado para la eficiencia y la escalabilidad. Haz clic en una colección para ver su estructura.</p>
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">users</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"role", "rating"}</code></pre></div></div>
+                                <div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">properties</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"managerId", "address"}</code></pre></div></div>
+                                <div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">service_requests</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"propertyId", "status"}</code></pre></div></div>
+                                <div class="data-card border border-stone-200 rounded-lg p-4 cursor-pointer hover:bg-stone-50"><h4 class="font-semibold text-blue-800">reviews</h4><div class="data-payload hidden mt-2 text-xs bg-stone-100 p-2 rounded"><pre><code>{"specialistId", "rating"}</code></pre></div></div>
+                            </div>
+                        </div>
+                        <div id="logic" class="tab-content p-4">
+                            <h3 class="font-bold text-lg mb-4">Automatización con Cloud Functions</h3>
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div><p class="text-sm text-stone-600 mb-4">Las Cloud Functions serán el cerebro de nuestro backend, ejecutando tareas críticas sin intervención manual.</p><div class="space-y-3 text-sm"><div class="bg-stone-50 p-3 rounded-lg"><strong class="text-green-700">ON CREATE(user):</strong> Inicializa el perfil del especialista.</div><div class="bg-stone-50 p-3 rounded-lg"><strong class="text-yellow-700">ON UPDATE(request):</strong> Envía notificaciones de estado.</div><div class="bg-stone-50 p-3 rounded-lg"><strong class="text-blue-700">ON WRITE(review):</strong> Recalcula el rating del especialista.</div></div></div>
+                                <div class="h-64"><canvas id="functionsChart"></canvas></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="seguridad" class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <div class="text-center mb-12"><h2 class="text-3xl font-bold mb-2">Seguridad por Diseño</h2><p class="text-md text-stone-600 max-w-2xl mx-auto">La protección de los datos de nuestros usuarios será primordial. Implementaremos una estrategia de seguridad de múltiples capas.</p></div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-stone-100 p-6 rounded-xl"><h3 class="font-bold text-xl mb-3 text-blue-900">Reglas de Acceso a Datos (Firestore)</h3><p class="text-sm text-stone-600 mb-4">Las reglas de Firestore actuarán como un guardián a nivel de base de datos, asegurando que los usuarios solo accedan a la información que les corresponde.</p><div class="bg-black text-white p-4 rounded-md font-mono text-xs"><span class="text-pink-400">match</span> /properties/{propertyId} {<br>&nbsp;&nbsp;<span class="text-cyan-400">allow</span> read: <span class="text-yellow-400">if</span> request.auth != <span class="text-purple-400">null</span>;<br>&nbsp;&nbsp;<span class="text-cyan-400">allow</span> write: <span class="text-yellow-400">if</span> request.auth.uid == resource.data.managerId;<br>}</div></div>
+                    <div class="bg-stone-100 p-6 rounded-xl"><h3 class="font-bold text-xl mb-3 text-blue-900">Reglas de Acceso a Archivos (Storage)</h3><p class="text-sm text-stone-600 mb-4">Las reglas de Storage protegerán los archivos subidos, validando no solo quién puede subir, sino también el tamaño y tipo de archivo.</p><div class="bg-black text-white p-4 rounded-md font-mono text-xs"><span class="text-pink-400">match</span> /requests/{reqId}/{fileName} {<br>&nbsp;&nbsp;<span class="text-cyan-400">allow</span> write: <span class="text-yellow-400">if</span> request.resource.size &lt; 5 * 1024 * 1024;<br>}</div></div>
+                </div>
+            </section>
+
+            <section class="py-10">
+                <header class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Hoja de Ruta de Experiencia de Usuario</h2>
+                    <p class="text-lg text-gray-600 mt-2">Flujos de navegación y funcionalidades clave para cada rol en nuestro ecosistema.</p>
+                </header>
+
+                <div class="flex flex-col items-center mb-12">
+                    <div class="flow-node screen"><p class="node-title">1. Pantalla Inicial</p></div>
+                    <div class="flow-arrow w-full h-12 flex justify-center items-center">↓</div>
+                    <div class="flex space-x-8"><div class="flow-node action"><p class="node-title">2. Iniciar Sesión / Registrarse</p></div></div>
+                    <div class="flow-arrow w-full h-12 flex justify-center items-center">↓</div>
+                    <div class="flow-node decision"><p class="node-title">3. Verificación de Rol</p></div>
+                </div>
+                <div class="grid grid-cols-1 xl:grid-cols-4 gap-6">
+                    <div class="role-lane"><h2 class="text-xl font-bold text-violet-700 mb-6 text-center">Ruta: Adm. de Propiedades</h2><div class="space-y-4 flex flex-col flex-grow"><div class="flow-node screen"><p class="node-title">Dashboard (Admin)</p><p class="node-desc">Lista de propiedades y solicitudes de servicio.</p></div><div class="flow-arrow">↓</div><div class="flow-node action"><p class="node-title">Acciones</p><p class="node-desc">• Crear Solicitud<br>• Ver Detalle</p></div><div class="flow-arrow">↓</div><div class="space-y-4 mt-auto"><div class="flow-node screen"><p class="node-title">Página: Nueva Solicitud</p></div></div></div></div>
+                    <div class="role-lane"><h2 class="text-xl font-bold text-green-700 mb-6 text-center">Ruta: Profesional Especialista</h2><div class="space-y-4 flex flex-col flex-grow"><div class="flow-node screen"><p class="node-title">Dashboard (Profesional)</p><p class="node-desc">Lista de trabajos disponibles y asignados.</p></div><div class="flow-arrow">↓</div><div class="flow-node action"><p class="node-title">Acciones</p><p class="node-desc">• Aceptar Trabajo<br>• Documentar Avance</p></div><div class="flow-arrow">↓</div><div class="space-y-4 mt-auto"><div class="flow-node screen"><p class="node-title">Página: Mi Perfil / Portafolio</p></div></div></div></div>
+                    <div class="role-lane"><h2 class="text-xl font-bold text-red-700 mb-6 text-center">Ruta: Usuario Particular</h2><div class="space-y-4 flex flex-col flex-grow"><div class="flow-node screen"><p class="node-title">Dashboard (Particular)</p><p class="node-desc">Estado de sus reparaciones e historial.</p></div><div class="flow-arrow">↓</div><div class="flow-node action"><p class="node-title">Acciones</p><p class="node-desc">• Solicitar Reparación<br>• Calificar Servicio</p></div><div class="flow-arrow">↓</div><div class="space-y-4 mt-auto"><div class="flow-node screen"><p class="node-title">Página: Solicitar Reparación</p></div></div></div></div>
+                    <div class="role-lane bg-slate-800 text-white"><h2 class="text-xl font-bold text-white mb-6 text-center">Ruta: Admin del Sistema</h2><div class="space-y-4 flex flex-col flex-grow"><div class="flow-node screen !bg-slate-700 !border-slate-500"><p class="node-title !text-white">Dashboard General</p><p class="node-desc !text-slate-300">Vista global de KPIs.</p></div><div class="flow-arrow !text-slate-500">↓</div><div class="flow-node action !bg-slate-700 !border-slate-500"><p class="node-title !text-white">Paneles</p><p class="node-desc !text-slate-300">• Gestión de Usuarios<br>• Gestión de Disputas</p></div><div class="flow-arrow !text-slate-500">↓</div><div class="space-y-4 mt-auto"><div class="flow-node screen !bg-slate-700 !border-slate-500"><p class="node-title !text-white">Página: Reportes</p></div></div></div></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="js/bundle.js" defer></script>
+</body>
+</html>

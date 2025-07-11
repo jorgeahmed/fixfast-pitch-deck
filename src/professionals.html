@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixFast - Únete como Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <main class="container mx-auto p-4 md:p-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10">
+            <header class="text-center mb-8">
+                <h1 class="text-3xl md:text-4xl font-black text-gray-900 mb-2">Únete a la Red de Profesionales FixFast</h1>
+                <p class="text-lg text-gray-600">Regístrate para obtener acceso a trabajos verificados, pagos seguros y herramientas para crecer tu negocio.</p>
+            </header>
+            <form action="https://formspree.io/f/mldnqwby" method="POST">
+                <div class="space-y-6">
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+                        <input type="text" name="Nombre" id="full-name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" name="Email" id="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                     <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Teléfono de Contacto</label>
+                        <input type="tel" name="Teléfono" id="phone" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="specialty" class="block text-sm font-medium text-gray-700">Especialidad Principal</label>
+                        <select id="specialty" name="Especialidad" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            <option>Fontanería</option>
+                            <option>Electricidad</option>
+                            <option>Climatización (HVAC)</option>
+                            <option>Carpintería</option>
+                            <option>Pintura</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-transform transform hover:scale-105">Enviar Pre-registro</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    </body>
+</html>

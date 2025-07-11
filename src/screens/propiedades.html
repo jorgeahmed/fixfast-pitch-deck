@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#0f1a24] dark justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Noto Serif", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="flex items-center bg-[#0f1a24] p-4 pb-2 justify-between">
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Properties</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-white" data-icon="Plus" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="px-4 py-3">
+          <label class="flex flex-col min-w-40 h-12 w-full">
+            <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+              <div
+                class="text-[#8daece] flex border-none bg-[#20364b] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                data-icon="MagnifyingGlass"
+                data-size="24px"
+                data-weight="regular"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+              </div>
+              <input
+                placeholder="Search by address"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#20364b] focus:border-none h-full placeholder:text-[#8daece] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                value=""
+              />
+            </div>
+          </label>
+        </div>
+        <div class="flex gap-3 p-3 overflow-x-hidden">
+          <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#20364b] pl-4 pr-2">
+            <p class="text-white text-sm font-medium leading-normal">Type</p>
+            <div class="text-white" data-icon="CaretDown" data-size="20px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+              </svg>
+            </div>
+          </button>
+          <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#20364b] pl-4 pr-2">
+            <p class="text-white text-sm font-medium leading-normal">Sort</p>
+            <div class="text-white" data-icon="CaretDown" data-size="20px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="flex items-center gap-4 bg-[#0f1a24] px-4 min-h-[72px] py-2">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLWCvi28Da3K_AXjLd4t4X0Z6sMZYn88_f3BixoDg3GN_bu2T6F_rik7suoRTxFLyfkeaAF7QQBWaYQat2khnXafhmIFIRVKkYl5mm7tcXeZKtaBG5sQujrVMbUgLk6TRRRXLwPtJxXlwTgEhTaPDNuWezbItG_J0OMNOmvIZN_u7a7LQl4qLQhEqGA5MOh_EHC8Iu-JMqR5nnwDNWeHby1RWKzKgllFxTRXpsynnLGRm16cv0qZWvZofWrQc3LZwnoRTucickWzs");'
+          ></div>
+          <div class="flex flex-col justify-center">
+            <p class="text-white text-base font-medium leading-normal line-clamp-1">123 Elm Street</p>
+            <p class="text-[#8daece] text-sm font-normal leading-normal line-clamp-2">Apartment</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#0f1a24] px-4 min-h-[72px] py-2">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDjk3YP-sJtvugJw3AeLmWhsdI7TDciiVSyPALAdvF0QK3d_Mw7Vs27PcftvPJickPVY_9gakAix1I7sjOBCyxWdDj-ARXn9SvwpPssjnNkGrFzCX5DVPfSvJgYtKtNe0IR2laVTjINEj4HDQ2lCo9VRJTxlSbgXmCzzTDcuRqnrLziRtLOqHNksbGWU1MbODy8rP633Ebjemd1mq9xOrT_iQ03l3YQMMaKyaPazThr9uc56y4OVE7G_GVKQChFY4SbxQ9NAmqmMg");'
+          ></div>
+          <div class="flex flex-col justify-center">
+            <p class="text-white text-base font-medium leading-normal line-clamp-1">456 Oak Avenue</p>
+            <p class="text-[#8daece] text-sm font-normal leading-normal line-clamp-2">House</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#0f1a24] px-4 min-h-[72px] py-2">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKMaQ_d4PEMjJ2WMBFS1FkgKJcFZXLqBZKOe8H2qvwPK9lcZTSYAs8luuXFq6FOkLG3W9MAUvtpc02vOE3hLiodYZlOqUR5RnMtA8mcFL8-uWU-eMRiHxh-smCeyreU3BzBHtnFvZFmwXNMeHavPNn6kQPHXfx_vavFUOnFyMv1wWjEjRkfe2HUHQz02F9m7eMLdZAnKsc72sqwK6yS2WmXVpeg7viDNNn-zDsXFL0yLOAjU0LsoqiOD44IuDDVuKFOSIHFx8Q844");'
+          ></div>
+          <div class="flex flex-col justify-center">
+            <p class="text-white text-base font-medium leading-normal line-clamp-1">789 Pine Lane</p>
+            <p class="text-[#8daece] text-sm font-normal leading-normal line-clamp-2">Condo</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 bg-[#0f1a24] px-4 min-h-[72px] py-2">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlKlBMNPhwC_Lj4W3rbK6Xt_oB0xTS9xhZCWFv2SNadag7dWFEMBSCFD_jO-ViCRMmq6MRbxy-H1KnRyIHmUqSBrJhLgY9-CUl36Mwwk4DMhZJZvy8dyIfgb_hHf9vM-wnTu-ecqCSkkwgyLD1zvaS8KbDPMkxbZjFa2nTKned6FMLbtea3_GBbrLR25-wfDSFQ-4jUwegF9nNOHY4brthvdAmM4ZvXAdaM7NmyY1EhVMmhmx5WEn0pbut7NMYMg7yXqCOJY_xhvw");'
+          ></div>
+          <div class="flex flex-col justify-center">
+            <p class="text-white text-base font-medium leading-normal line-clamp-1">101 Maple Drive</p>
+            <p class="text-[#8daece] text-sm font-normal leading-normal line-clamp-2">Townhouse</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#20364b] bg-[#172736] px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#8daece]" href="#">
+            <div class="text-[#8daece] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#8daece] text-xs font-medium leading-normal tracking-[0.015em]">Dashboard</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-white" href="#">
+            <div class="text-white flex h-8 items-center justify-center" data-icon="Buildings" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M239.73,208H224V96a16,16,0,0,0-16-16H164a4,4,0,0,0-4,4V208H144V32.41a16.43,16.43,0,0,0-6.16-13,16,16,0,0,0-18.72-.69L39.12,72A16,16,0,0,0,32,85.34V208H16.27A8.18,8.18,0,0,0,8,215.47,8,8,0,0,0,16,224H240a8,8,0,0,0,8-8.53A8.18,8.18,0,0,0,239.73,208ZM76,184a8,8,0,0,1-8.53,8A8.18,8.18,0,0,1,60,183.72V168.27A8.19,8.19,0,0,1,67.47,160,8,8,0,0,1,76,168Zm0-56a8,8,0,0,1-8.53,8A8.19,8.19,0,0,1,60,127.72V112.27A8.19,8.19,0,0,1,67.47,104,8,8,0,0,1,76,112Zm40,56a8,8,0,0,1-8.53,8,8.18,8.18,0,0,1-7.47-8.26V168.27a8.19,8.19,0,0,1,7.47-8.26,8,8,0,0,1,8.53,8Zm0-56a8,8,0,0,1-8.53,8,8.19,8.19,0,0,1-7.47-8.26V112.27a8.19,8.19,0,0,1,7.47-8.26,8,8,0,0,1,8.53,8Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-white text-xs font-medium leading-normal tracking-[0.015em]">Properties</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#8daece]" href="#">
+            <div class="text-[#8daece] flex h-8 items-center justify-center" data-icon="File" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#8daece] text-xs font-medium leading-normal tracking-[0.015em]">Requests</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#8daece]" href="#">
+            <div class="text-[#8daece] flex h-8 items-center justify-center" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#8daece] text-xs font-medium leading-normal tracking-[0.015em]">Messages</p>
+          </a>
+        </div>
+        <div class="h-5 bg-[#172736]"></div>
+      </div>
+    </div>
+  </body>
+</html>
