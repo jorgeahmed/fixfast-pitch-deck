@@ -80,3 +80,12 @@ body {
 .accordion-header.open span:last-child {
     transform: rotate(45deg);
 }
+
+/* --- ESTILOS PARA PANELES DE CONTENIDO DE TABS --- */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
