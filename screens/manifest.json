@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Panel",
+    "file": "panel.html",
+    "description": "Dashboard principal del administrador de propiedades, con un resumen de sus propiedades y las solicitudes de servicio más recientes."
+  },
+  {
+    "name": "Panel de Control",
+    "file": "panel_control.html",
+    "description": "Dashboard del especialista, donde puede ver los trabajos disponibles, aceptar nuevas solicitudes y ver sus ganancias."
+  },
+  {
+    "name": "Panel de Administracion",
+    "file": "panel_admin.html",
+    "description": "Vista para el administrador del sistema (FixFast) para monitorear la salud de la plataforma, usuarios activos y métricas clave."
+  },
+  {
+    "name": "Lista Propiedades",
+    "file": "propiedades.html",
+    "description": "Permite al administrador de propiedades ver, buscar y filtrar todas las propiedades que gestiona en la plataforma."
+  },
+  {
+    "name": "Detalles de Propiedad",
+    "file": "property_details.html",
+    "description": "Muestra los detalles completos de una propiedad, incluyendo información general, finanzas y mantenimiento."
+  },
+  {
+    "name": "Servicios",
+    "file": "servicios.html",
+    "description": "Una lista completa de todas las solicitudes de servicio, permitiendo filtrar por estado (abiertas, completadas, etc.)."
+  },
+  {
+    "name": "Detalle de Solicitud",
+    "file": "service_request.html",
+    "description": "Vista detallada de una solicitud de servicio específica, incluyendo comunicación con el especialista y estado."
+  },
+  {
+    "name": "Solicitudes Recientes",
+    "file": "recent_requests.html",
+    "description": "Lista las solicitudes de servicio más recientes para una propiedad, mostrando su estado actual."
+  },
+  {
+    "name": "Solicitudes Pendientes",
+    "file": "pending_request.html",
+    "description": "Vista para que el administrador asigne un especialista a las solicitudes de servicio que aún no han sido atendidas."
+  },
+  {
+    "name": "En Progreso",
+    "file": "in_progress.html",
+    "description": "Muestra el seguimiento detallado y en tiempo real de una solicitud de servicio que ya ha sido aceptada por un especialista."
+  },
+  {
+    "name": "Perfil",
+    "file": "perfil.html",
+    "description": "Pantalla donde el usuario puede ver y editar su información personal, de contacto y de la empresa."
+  },
+  {
+    "name": "Agregar Nuevo",
+    "file": "agree.html",
+    "description": "Menú para agregar nuevas propiedades, solicitudes de servicio o especialistas a la plataforma."
+  }
+]
